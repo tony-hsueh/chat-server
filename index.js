@@ -4,7 +4,7 @@ const chatServer = require('http').createServer(app)
 const { v4: uuidv4 } = require('uuid')
 const io = require('socket.io')(chatServer, {
   cors: {
-    origin: process.env.NODE_ENV === 'develpment' ? "http://localhost:3000" : "https://tony-chat.netlify.app/",
+    origin: process.env.NODE_ENV === 'develpment' ? "http://localhost:3000" : "https://tony-chat.netlify.app",
   }
 })
 
