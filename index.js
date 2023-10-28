@@ -94,5 +94,5 @@ app.get('/', (req, res) => {
   res.send('hELLO')
 })
 
-app.listen(4000)
-chatServer.listen(4001)
+// app.listen(4000)
+chatServer.listen(process.env.PORT || 4001)
